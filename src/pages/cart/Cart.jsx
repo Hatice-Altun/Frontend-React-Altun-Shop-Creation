@@ -1,0 +1,47 @@
+import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { ShopContext } from "../../context/Shop-context";
+import { PRODUCTS } from "../../data/products";
+import CartItem from "../cart/Cart-item";
+import "../../styles/Cart.css";
+
+function Cart() {
+  const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
+  const totalAmount = getTotalCartAmount();
+  const navigate = useNavigate();
+
+  return (
+    <div className="cart">
+      <div>
+        <h1>Your products: </h1>
+      </div>
+      <div className="cart">
+        {PRODUCTS.map((product) => {
+          if (cartItems[product.id] !== 0) {
+            return <CartItem data={product} />;
+          }
+        })}
+      </div>
+
+      {totalAmount > 0 ? (
+        <div className="checkout">
+          <p> Subtotal: € {totalAmount} </p>
+          <button onClick={() => navigate("/shop")}> Continue Shopping </button>
+          <button
+            onClick={() => {
+              checkout();
+              navigate("/checkout");
+            }}
+          >
+            {" "}
+              Checkout{" "}
+          </button>
+        </div>
+      ) : (
+        <h2>Uw winkelmand is leeg</h2>
+      )}
+    </div>
+  );
+}
+
+export default Cart;
