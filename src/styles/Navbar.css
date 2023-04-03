@@ -1,7 +1,3 @@
-.logo-container img {
-  height: auto;
-}
-
 .navbar {
   width: 100%;
   height: 60px;
@@ -29,11 +25,11 @@
   height: 100%;
   display: flex;
   align-items: center;
-  padding-left: 150px;
+  padding-left: 50px;
 }
 
 .navbar .leftSide img {
-  width: 70px;
+  width: 95px;
 }
 
 .navbar .rightSide {
@@ -41,7 +37,8 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
+  padding-right: 50px;
 }
 
 .navbar a {
