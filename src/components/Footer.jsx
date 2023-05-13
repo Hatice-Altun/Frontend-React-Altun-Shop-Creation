@@ -8,9 +8,9 @@ function Footer() {
     return (
         <div className="footer">
             <div className="socialMedia">
+                <p> &copy; 2023 AltunIT - All rights reserved</p>
                 <FacebookIcon/><InstagramIcon/> <TwitterIcon/>
             </div>
-            <p> &copy; 2023 Created with ❤️ by Hatice Altun for a better WEB</p>
         </div>
     );
 }
