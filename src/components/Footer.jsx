@@ -7,8 +7,8 @@ import "../styles/Footer.css";
 function Footer() {
     return (
         <div className="footer">
+            <p> &copy; 2023 AltunIT - All rights reserved </p>
             <div className="socialMedia">
-                <p> &copy; 2023 AltunIT - All rights reserved</p>
                 <FacebookIcon/><InstagramIcon/> <TwitterIcon/>
             </div>
         </div>

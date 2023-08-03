@@ -9,17 +9,18 @@
 }
 
 .products {
-  width: 100%;
+  width: 60%;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
+  margin-left: 15%;
 }
 
 .product {
   border-radius: 15px;
   width: 150px;
-  height: 175px;
+  height: 25px;
   margin: 110px;
   display: flex;
   flex-direction: column;
@@ -28,7 +29,7 @@
 }
 
 .product img {
-  width: 250px;
+  width: 110px;
 }
 
 .product .description {

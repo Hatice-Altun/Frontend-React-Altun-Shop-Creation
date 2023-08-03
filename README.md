@@ -4,7 +4,7 @@
 * [Create React App](https://github.com/facebook/create-react-app).
 
 ## Final Result
-![Screenshot eindresultaat](src/assets/screenshot.png)
+![Screenshot eindresultaat](src/assets/screenshot.gif)
 
 ## Installation
 Once you have cloned the project to your local machine, first install the node_modules

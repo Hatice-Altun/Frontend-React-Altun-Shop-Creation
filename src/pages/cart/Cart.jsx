@@ -13,7 +13,7 @@ function Cart() {
   return (
     <div className="cart">
       <div>
-        <h1>Uw Producten: </h1>
+        <h1>Mijn bestelling: </h1>
       </div>
       <div className="cart">
         {PRODUCTS.map((product) => {
@@ -25,7 +25,7 @@ function Cart() {
 
       {totalAmount > 0 ? (
         <div className="checkout">
-          <p> Subtotaal: € {totalAmount},00</p>
+          <p> Totaal: € {totalAmount},00</p>
           <button onClick={() => navigate("/shop")}> Verder Shoppen </button>
           <button
             onClick={() => {
